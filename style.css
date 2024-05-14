@@ -48,20 +48,7 @@ html{
     color: #02245A;
     transform: scale(1.2);
 }
-.contact-btn{
-    margin-top: 20px;
-}
-.ct-btn{
-    display: inline-block;
-    padding: 10px 30px;
-    background-color: #000000;
-    color: #fff;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-.ct-btn:hover{
-    background-color: #02245A;
-}
+
 /*-------------------------------------------------------------*/
 /*--------------------------COVER IMG--------------------------*/
 /*-------------------------------------------------------------*/
@@ -88,8 +75,19 @@ html{
     bottom: 20%;
     left: 10px;
     margin-left: 5%;
+    margin-right: 5%;
     background-color: transparent;
     color: white;
+}
+.contact-sec1{
+    position: absolute;
+    bottom: 10%;
+    left: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: transparent;
+    color: white;
+    width: 9.91%;
 }
 .coverimg h2{
     font-size: 35px;
@@ -97,6 +95,7 @@ html{
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 15px;
+    margin: 0%;
 }
 .coverimg h3{
     justify-content: left;
@@ -104,6 +103,21 @@ html{
     font-size: 70px;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 10px;
+    margin: 0%;
+}
+.contact-btn{
+    margin-top: 20px;
+}
+.ct-btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.ct-btn:hover{
+    background-color: #02245A;
 }
 /*-------------------------------------------------------------*/
 /*----------------------------INTRO----------------------------*/
@@ -156,7 +170,7 @@ html{
 /*----------------------------WHY US---------------------------*/
 /*-------------------------------------------------------------*/
 .why-title {
-    margin-top: 75px;
+    margin-top: 130px;
     padding-bottom: 90px;
     text-align: center;
     font-size: 40px;
@@ -229,7 +243,7 @@ html{
     border: solid 1px;
 }
 .overlay h3 {
-    margin: 0; /* Remove default margin for better alignment */
+    margin: 0;
     font-size: 25px;
     font-weight: bold;
     background-color: transparent;
@@ -433,13 +447,10 @@ label{
     background-color: #1e1e1e;
 }
 .vmv-col{
-    flex-basis: calc(30% - 25px);
-    border: solid 1px #000000;
-    padding: 10px;
-    box-sizing: border-box;
+    flex-basis: calc(30% - 20px);
     margin-top: 50px;
     margin-bottom: 50px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 .vmv h4{
     text-align: center;
@@ -461,12 +472,11 @@ label{
     padding-top: 90px;
     padding-bottom: 50px;
 }
-
 .about-row1{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top:50px
+    padding-top: 100px;
 }
 .about-col1, .about-col2{
     flex: 45%;
@@ -512,7 +522,6 @@ label{
     padding-left: 15%;
     padding-bottom: 29.1%;
 }
-
 .about-logo{
     display: flex;
     max-width: 100%;
@@ -537,7 +546,6 @@ label{
     margin-right: 20%;
     text-align: center;
 }
-
 .contact-banner{
     background-color: #1e1e1e;
     padding-bottom: 90px;
@@ -563,5 +571,54 @@ label{
 .contact-banner-btn:hover{
     transition: 0.3s;
     background-color:#515151;
+    cursor: pointer;
+}
+/*-------------------------------------------------------------*/
+/*---------------------------SERVICES--------------------------*/
+/*-------------------------------------------------------------*/
+.services-title{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 150px;
+    padding-bottom: 70px;
+}
+.services-title p{
+    font-size: 17px;
+    padding-top: 20px;
+}
+.service-section{
+    margin: 0 5%;
+}
+.service-row, .service-row1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service-col{
+    flex-basis: calc(30% - 5px);
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.service-section h3{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.service-section p{
+    text-align: center;
+    font-size: 15px;
+}
+.service-img-col {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    height: 300px;
+}
+.service-img-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     cursor: pointer;
 }
